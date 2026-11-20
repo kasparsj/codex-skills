@@ -44,7 +44,7 @@ Before returning the change set, review the exact issue payloads for these eleme
 
 ## Check source-to-issue completeness
 
-Before returning the final change set, re-read the source against the exact payloads, rather than checking only the summary or issue titles. For multi-part feedback, use an independent source-led reviewer when delegation is available and authorized; otherwise perform a separate source-led pass. Give an independent reviewer the source and proposed/existing payloads, not just the first drafter's coverage conclusions.
+Before returning the final change set, re-read the source against the exact payloads, rather than checking only the summary or issue titles. Use an independent source-led reviewer when feedback spans interacting features, contains materially ambiguous or conflicting requests, or requires consequential scope changes, and delegation is available and authorized. For straightforward feedback or when delegation is unavailable, perform a separate source-led pass yourself; multiple items alone do not require delegation. Give an independent reviewer the source and proposed/existing payloads, not just the first drafter's coverage conclusions.
 
 For each inventory item, record one of:
 
@@ -57,6 +57,8 @@ For each inventory item, record one of:
 Apply this omission test: **Could an implementer satisfy every cited acceptance criterion while omitting this source request?** If yes, coverage is partial. Check especially requested actions versus status displays, contextual creation versus linking, search versus plain entry, and omitted fields in copy/reuse lists. These are checks for lost behavior, not instructions to add those features when absent from the source.
 
 Reconcile gaps before claiming complete coverage. Where a missing decision or scope boundary remains, expose it in the change set and publication summary. Successful code tests, valid links, required payload headings and publication readback do not establish source-to-requirement completeness. Report genuine untracked outcomes separately from small acceptance refinements and optional design choices; avoid creating duplicate issues for refinements that fit existing work.
+
+Stop the coverage review when every source request has a supported disposition and the exact payloads reflect the agreed scope. Unresolved decisions may remain if their missing facts, owner or next action, and tracking status are explicit; do not call untracked or partial items complete. Repeat review only when changed source material, changed payloads or new evidence invalidates a mapping, and review the affected mappings unless the change has broader consequences. Do not reopen settled items solely to polish wording or eliminate every uncertainty.
 
 ## Publish authorized changes
 
